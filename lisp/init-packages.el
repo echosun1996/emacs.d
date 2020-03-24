@@ -57,7 +57,6 @@
 
 
 ;; 引号自动补全
-(require 'smartparens-config)
 (smartparens-global-mode t)
 
 (ivy-mode 1)
@@ -76,8 +75,8 @@
 ;; 启动主题
 (load-theme 'monokai t)
 
-;;(require popwin)
-;;(popwin-mode t)
+(require 'popwin)
+(popwin-mode t)
 
 
 
