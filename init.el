@@ -16,38 +16,7 @@
 (require 'init-better-defaults)
 (require 'init-org)
 (require 'init-keybindings)
+
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
 (load-file custom-file)
-
-;; 快速打开配置文件
-;;(defun open-init-file()  (interactive)
-;;  (find-file "~/.emacs.d/init.el"))
-
-
-
-
-
-
-;; 自动删除选中
-;;(delete-selection-mode t)
-
-;; 默认全屏
-;;(setq initial-frame-alist (quote ((fullscreen.maximized))))
-
-
-
-
-
-;; smex not use
-;;(require 'smex)
-;;(smex-initialize)
-;;(global-set-key (kbd "M-x") 'smex)
-
-
-;;(setq enable-recursive-minibuffers t)
-
-
-;; Always start smartparens mode in js-mode.
-;;(add-hook 'js-mode-hook #'smartparens-mode)
-;;(add-hook 'emacs-lisp-mode-hook #'smartparens-mode

@@ -7,7 +7,12 @@
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
-;; 这一行代码，将函数 open-init-file 绑定到 <f2> 键上
+
+;; 快速打开配置文件
+(defun open-init-file()  (interactive)
+(find-file "~/.emacs.d/init.el"))
+
+;; 这一行代码，将函数 open-init-file 绑定到 <f1> 键上
 (global-set-key (kbd "<f1>") 'open-init-file)
 
 
@@ -19,5 +24,7 @@
 (global-set-key (kbd "C-h C-v") 'find-variable)
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
+
+(global-set-key (kbd "C-c p f") 'counsel-git)
 
 (provide 'init-keybindings)
